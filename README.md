@@ -44,10 +44,10 @@ Run the simulator from the command line, specifying the program names and option
 - [arrivalTime] is optional. If omitted, programs are loaded in the order they appear, with increasing arrival times.
 
         ./Simulator programVerySimple 6 program1 3 program2 0                                                    
-This will:                                                                                                  
-- Load programVerySimple.txt with arrival time 6                                                            
-- Load program1.txt with arrival time 3                                                                     
-- Load program2.txt with arrival time 0                                                                    
+- This will:                                                                                                  
+        - Load programVerySimple.txt with arrival time 6                                                            
+        - Load program1.txt with arrival time 3                                                                     
+        - Load program2.txt with arrival time 0                                                                    
 
 Or, if arrival times are omitted:
 
