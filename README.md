@@ -26,31 +26,32 @@ Each program file follows this structure:
 - Line 3+: <instruction list> # One instruction per line
 
 ### Example (`program1.txt`)
-    5
-    2
-    ADD 3
-    JUMP 1
-    TRAP
-    NOP
-    END
+        30
+        5
+        NOP
+        TRAP 5
+        ADD 10 -13
+        WRITE 15
+        HALT
 
 ## How to Use
 Run the simulator from the command line, specifying the program names and optionally their arrival times.
 
 ### Syntax
-./Simulator <programName1> [arrivalTime1] <programName2> [arrivalTime2] ...
+        ./Simulator <programName1> [arrivalTime1] <programName2> [arrivalTime2] ...
 
 - <programName> refers to the .txt file with the program (do not include the .txt extension).
 - [arrivalTime] is optional. If omitted, programs are loaded in the order they appear, with increasing arrival times.
 
-    ./Simulator programVerySimple 6 program1 3 program2 0                                                    
+        ./Simulator programVerySimple 6 program1 3 program2 0                                                    
 This will:                                                                                                  
 - Load programVerySimple.txt with arrival time 6                                                            
 - Load program1.txt with arrival time 3                                                                     
 - Load program2.txt with arrival time 0                                                                    
 
 Or, if arrival times are omitted:
-    ./Simulator programA programB programC
+
+        ./Simulator programA programB programC                 
 - programA.txt arrives at time 0
 - programB.txt at time 1
 - programC.txt at time 2
