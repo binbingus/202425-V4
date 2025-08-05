@@ -1,0 +1,18 @@
+// Students created messages
+// Format: numberOfMessage,textPrintfFormatedWithColourCodes
+//
+// numbers of messages greather than 100 for students
+//
+//  V1 - 1
+101,User program list:\n
+102,\tProgram [@B%s@@] with arrival time [@B%d@@]\n
+
+//  V1 - 9
+103,Ready-to-run processes queue:\n
+104,\t\t
+105,[@G%d@@, %d],
+106,\n
+108,%s 
+
+// V4 - 8
+144,@GTwo_or_more_holes_have_been_coalesced@@\n

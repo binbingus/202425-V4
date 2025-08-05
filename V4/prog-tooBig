@@ -1,0 +1,7 @@
+70 // > 60
+5
+NOP
+TRAP 5
+ADD 10 -13
+WRITE 15
+HALT
