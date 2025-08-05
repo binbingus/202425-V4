@@ -2,6 +2,7 @@
 
 A simple **Operating System Simulator** developed for a university project (Escuela de Infeniería Informática, UniOvi)
 It supports the loading and execution of basic user-defined programs written in a custom text-based format.
+Makefile is provided, runs in Ubuntu.
 
 ## What It Does
 This simulator mimics the behavior of a very basic operating system. It handles:
