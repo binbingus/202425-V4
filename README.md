@@ -56,23 +56,29 @@ Or, if arrival times are omitted:
 - programC.txt at time 2
     
 ## Supported Instructions
-- ADD x y: Adds two integers and stores them into the Accumulator register
-- SHIFT x: Shifts the bits of the values stored in the Accumulator register depending on the value (+-)
-- DIV x y: Divides two integers and stores them into the Accumulator register
-- TRAP x y : Raises Interrupt with that code (number)
-- NOP: No operation
-- JUMP x : Jumps [x] lines (PC value + x)
-- ZJUMP x: Jumps [x] lines if the value in the Accumulator register equals Zero
-- WRITE x y: Writes value of the register specified by [y] in the memory address [x]. Writes the value of the Accumulator Register by default.
-- READ x y: Same functionality as WRITE, but reading values. [y] specifies in which register the data will be copied, [x] specifies the address.
-- INC x y: Increases the value stored in the [y] register by [x].
-- HALT: Stops the execution
-- OS: Raises Operating System Interrupt
-- IRET: Returns from executing an Interrupt
-- MOV x y: Copies the content of the [x] register into the [y] register
-- RET: Return from a subroutine
-- CALL: Jump to a subroutine
+- ADD x y:    Adds two integers and stores them into the Accumulator register
+- SHIFT x:    Shifts the bits of the values stored in the Accumulator register depending on the value (+-)
+- DIV x y:    Divides two integers and stores them into the Accumulator register
+- TRAP x y :  Raises Interrupt with that code (number)
+- NOP:        No operation
+- JUMP x :    Jumps [x] lines (PC value + x)
+- ZJUMP x:    Jumps [x] lines if the value in the Accumulator register equals Zero
+- WRITE x y:  Writes value of the register specified by [y] in the memory address [x]. Writes the value of the Accumulator Register by default.
+- READ x y:   Same functionality as WRITE, but reading values. [y] specifies in which register the data will be copied, [x] specifies the address.
+- INC x y:    Increases the value stored in the [y] register by [x].
+- HALT:       Stops the execution
+- OS:         Raises Operating System Interrupt
+- IRET:       Returns from executing an Interrupt
+- MOV x y:    Copies the content of the [x] register into the [y] register
+- RET:        Return from a subroutine
+- CALL:       Jump to a subroutine
 - MEMADD x y: Adds [x] and the contents of the address [y] into the Accumulator Register  
+
+# Features
+- Instruction parsing
+- Basic scheduling
+- Trap/Interrupt handling
+- Arrival time and priority management
 
 # Notes
 This project is for educational purposes and not intended for production use.
